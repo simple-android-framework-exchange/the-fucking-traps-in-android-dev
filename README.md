@@ -21,3 +21,4 @@
 |           文章标题        |           作者              |      分享时间      |   
 |---------------------------|:---------------------------:|--------------------|
 |  [Android 测试驱动开发-从工从具到实践](test/Android 测试驱动开发-从工从具到实践.md) | [hanqin](https://www.github.com/hanqin)  | 2015.3.19 |
+|  [仿新浪微博加＃话题的EditText实现](dev/views/仿新浪微博加＃话题的EditText实现.md) | [Ailurus](https://github.com/liangzhitao)  | 2015.4.11 |
