@@ -61,7 +61,7 @@ private EditText editText;
 View view = inflater.inflate(R.layout.fragment_main, container, false);
 editText = (EditText) view.findViewById(R.id.edit_text);
 button = (Button) view.findViewById(R.id.bt);
-buttont.setOnClickListener(new OnClickListener() {
+button.setOnClickListener(new OnClickListener() {
 	@Override
 	public void onClick(View v) {
 		int nextInt = new Random().nextInt(100);
@@ -93,7 +93,7 @@ editText.setOnKeyListener(new OnKeyListener() {
 			int lastPos = 0;
 			for (int i = 0; i < mList.size(); i++) { //循环遍历整个输入框的所有字符
 				if ((lastPos = editText.getText().toString().indexOf(mList.get(i).getBookName(), lastPos)) != -1) {
-					if (selectionStart >= lastPos && selectionStart <= (lastPos + mList.get(i).getBookName().length())) {
+					if (selectionStart > lastPos && selectionStart <= (lastPos + mList.get(i).getBookName().length())) {
 						String sss = editText.getText().toString();
 						editText.setText(sss.substring(0, lastPos) + sss.substring(lastPos + mList.get(i).getBookName().length())); //字符串替换，删掉符合条件的字符串
 						mList.remove(i); //删除对应实体
